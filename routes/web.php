@@ -6,6 +6,8 @@ use App\Http\Controllers\TestController;
 use App\Http\Controllers\RowDeleteController;
 use App\Http\Controllers\BatchDeleteController;
 use App\Http\Controllers\SearchTableController;
+use App\Http\Controllers\MultipleSelectController;
+use App\Http\Controllers\BatchInsertController;
 use App\Models\Test;
 use Illuminate\Http\Request;
 // use DB;
@@ -61,4 +63,6 @@ Route::post('/modify-row', function (Request $request) {
 Route::resource("test-save", TestController::class);
 Route::resource("delete-row", RowDeleteController::class);
 Route::resource("batch-delete", BatchDeleteController::class);
+Route::resource("batch-insert", BatchInsertController::class);
+Route::resource("multiple-select", MultipleSelectController::class);
 Route::resource("search-table", SearchTableController::class);

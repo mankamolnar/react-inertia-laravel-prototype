@@ -67,6 +67,7 @@ const Test = (props) => {
         footer: () => <span>Delete</span>,
       }),
       columnHelper.accessor('modify', {
+        // DEBUG #2 - STILL NEEDS TO WORK ON IT.
         cell: info => <a href={`/modify-row/${info.row.original.id}`}>Modify</a>,
         header: () => <span>Modify</span>,
         footer: () => <span>Modify</span>,
